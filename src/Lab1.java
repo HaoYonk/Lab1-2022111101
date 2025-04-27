@@ -432,7 +432,7 @@ public class Lab1 {
             System.out.println("4. 计算两个单词间的最短路径");
             System.out.println("5. 计算单词的PageRank值");
             System.out.println("6. 随机游走");
-            //System.out.println("7. 将有向图保存为图形文件 (PNG)");
+            System.out.println("7. 将有向图保存为图形文件 (PNG)");
             System.out.println("0. 退出");
             String choice = scanner.nextLine();
             switch (choice) {
