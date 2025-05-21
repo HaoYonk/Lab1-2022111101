@@ -400,6 +400,12 @@ public class Lab1 {
         }
     }
 
+    public void addEdge(String from, String to, int weight) {
+        graph.computeIfAbsent(from, k -> new HashMap<>()).put(to, weight);
+        // 确保节点存在于graph中（即使没有出边）
+        graph.computeIfAbsent(to, k -> new HashMap<>());
+    }
+
     public static void main(String[] args) {
         Lab1 lab = new Lab1();
         Scanner scanner = new Scanner(System.in);
